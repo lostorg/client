@@ -58,16 +58,73 @@ var content = React.createElement(
     { 'class': 'window-content' },
     React.createElement(
       'div',
-      { 'class': 'padded-more' },
+      { 'class': 'pane-group' },
       React.createElement(
-        'h1',
-        null,
-        'Welcome to Photon'
+        'div',
+        { 'class': 'pane-sm sidebar' },
+        React.createElement(
+          'nav',
+          { 'class': 'nav-group' },
+          React.createElement(
+            'h5',
+            { 'class': 'nav-group-title' },
+            'Favorites'
+          ),
+          React.createElement(
+            'a',
+            { 'class': 'nav-group-item active' },
+            React.createElement('span', { 'class': 'icon icon-home' }),
+            'connors'
+          ),
+          React.createElement(
+            'span',
+            { 'class': 'nav-group-item' },
+            React.createElement('span', { 'class': 'icon icon-download' }),
+            'Downloads'
+          ),
+          React.createElement(
+            'span',
+            { 'class': 'nav-group-item' },
+            React.createElement('span', { 'class': 'icon icon-folder' }),
+            'Documents'
+          ),
+          React.createElement(
+            'span',
+            { 'class': 'nav-group-item' },
+            React.createElement('span', { 'class': 'icon icon-signal' }),
+            'AirPlay'
+          ),
+          React.createElement(
+            'span',
+            { 'class': 'nav-group-item' },
+            React.createElement('span', { 'class': 'icon icon-print' }),
+            'Applications'
+          ),
+          React.createElement(
+            'span',
+            { 'class': 'nav-group-item' },
+            React.createElement('span', { 'class': 'icon icon-cloud' }),
+            'Desktop'
+          )
+        )
       ),
       React.createElement(
-        'p',
-        null,
-        'Thanks for downloading Photon. This is an example HTML page that\'s linked up to compiled Photon CSS, has the proper meta tags and the HTML structure.'
+        'div',
+        { 'class': 'pane' },
+        React.createElement(
+          'div',
+          { 'class': 'padded-more' },
+          React.createElement(
+            'h1',
+            null,
+            'Welcome to Photon'
+          ),
+          React.createElement(
+            'p',
+            null,
+            'Thanks for downloading Photon. This is an example HTML page that\'s linked up to compiled Photon CSS, has the proper meta tags and the HTML structure.'
+          )
+        )
       )
     )
   ),
