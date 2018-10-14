@@ -12,7 +12,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'source/js/jsx/', // Custom folder
           src: ['*.jsx'],
-          dest: 'source/js/jsx-compiled/', // Custom folder
+          dest: 'dist/', // Custom folder
           ext: '.js'
         }]
       }
