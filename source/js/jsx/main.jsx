@@ -1,5 +1,8 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
+
+let SplitPane = require('react-split-pane');
+
 let content = <div class="window">
 
   <header class="toolbar toolbar-header">
@@ -37,6 +40,7 @@ let content = <div class="window">
   <div class="window-content">
 
 <div class="pane-group">
+<SplitPane split="vertical" minSize={50} defaultSize={100}>
       <div class="pane-sm sidebar">
 
     <nav class="nav-group">
@@ -76,6 +80,7 @@ let content = <div class="window">
     </p>
     </div>
     </div>
+    </SplitPane>
     </div>
   </div>
 

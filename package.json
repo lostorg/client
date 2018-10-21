@@ -34,6 +34,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "redux": "^4.0.1",
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "react-split-pane": "^0.1.84"
   }
 }
