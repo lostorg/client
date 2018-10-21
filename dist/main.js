@@ -64,71 +64,134 @@ var content = React.createElement(
       { 'class': 'pane-group' },
       React.createElement(
         SplitPane,
-        { split: 'vertical', minSize: 50, defaultSize: 100 },
+        { split: 'vertical', minSize: 150, defaultSize: 150 },
         React.createElement(
           'div',
-          { 'class': 'pane-sm sidebar' },
+          { className: 'sidebar-override' },
           React.createElement(
-            'nav',
-            { 'class': 'nav-group' },
+            'div',
+            { 'class': 'pane-sm sidebar sidebar-override' },
             React.createElement(
-              'h5',
-              { 'class': 'nav-group-title' },
-              'Favorites'
-            ),
-            React.createElement(
-              'a',
-              { 'class': 'nav-group-item active' },
-              React.createElement('span', { 'class': 'icon icon-home' }),
-              'connors'
-            ),
-            React.createElement(
-              'span',
-              { 'class': 'nav-group-item' },
-              React.createElement('span', { 'class': 'icon icon-download' }),
-              'Downloads'
-            ),
-            React.createElement(
-              'span',
-              { 'class': 'nav-group-item' },
-              React.createElement('span', { 'class': 'icon icon-folder' }),
-              'Documents'
-            ),
-            React.createElement(
-              'span',
-              { 'class': 'nav-group-item' },
-              React.createElement('span', { 'class': 'icon icon-signal' }),
-              'AirPlay'
-            ),
-            React.createElement(
-              'span',
-              { 'class': 'nav-group-item' },
-              React.createElement('span', { 'class': 'icon icon-print' }),
-              'Applications'
-            ),
-            React.createElement(
-              'span',
-              { 'class': 'nav-group-item' },
-              React.createElement('span', { 'class': 'icon icon-cloud' }),
-              'Desktop'
+              'nav',
+              { 'class': 'nav-group' },
+              React.createElement(
+                'h5',
+                { 'class': 'nav-group-title' },
+                'Favorites'
+              ),
+              React.createElement(
+                'a',
+                { 'class': 'nav-group-item active' },
+                React.createElement('span', { 'class': 'icon icon-home' }),
+                'connors'
+              ),
+              React.createElement(
+                'span',
+                { 'class': 'nav-group-item' },
+                React.createElement('span', { 'class': 'icon icon-download' }),
+                'Downloads'
+              ),
+              React.createElement(
+                'span',
+                { 'class': 'nav-group-item' },
+                React.createElement('span', { 'class': 'icon icon-folder' }),
+                'Documents'
+              ),
+              React.createElement(
+                'span',
+                { 'class': 'nav-group-item' },
+                React.createElement('span', { 'class': 'icon icon-signal' }),
+                'AirPlay'
+              ),
+              React.createElement(
+                'span',
+                { 'class': 'nav-group-item' },
+                React.createElement('span', { 'class': 'icon icon-print' }),
+                'Applications'
+              ),
+              React.createElement(
+                'span',
+                { 'class': 'nav-group-item' },
+                React.createElement('span', { 'class': 'icon icon-cloud' }),
+                'Desktop'
+              )
             )
           )
         ),
         React.createElement(
           'div',
-          { 'class': 'pane' },
+          null,
           React.createElement(
-            'div',
-            { 'class': 'padded-more' },
+            SplitPane,
+            { split: 'horizontal', defaultSize: '50%' },
             React.createElement(
-              'h1',
-              null,
-              'Welcome to Photon'
+              'div',
+              { 'class': 'pane' },
+              React.createElement(
+                'ul',
+                { 'class': 'list-group' },
+                React.createElement(
+                  'li',
+                  { 'class': 'list-group-header' },
+                  React.createElement('input', { 'class': 'form-control', type: 'text', placeholder: 'Search for someone' })
+                ),
+                React.createElement(
+                  'li',
+                  { 'class': 'list-group-item' },
+                  React.createElement('img', { 'class': 'img-circle media-object pull-left', src: '/assets/img/avatar.jpg', width: '32', height: '32' }),
+                  React.createElement(
+                    'div',
+                    { 'class': 'media-body' },
+                    React.createElement(
+                      'strong',
+                      null,
+                      'List item title'
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      'Lorem ipsum dolor sit amet.'
+                    )
+                  )
+                ),
+                React.createElement(
+                  'li',
+                  { 'class': 'list-group-item' },
+                  React.createElement('img', { 'class': 'img-circle media-object pull-left', src: '/assets/img/avatar2.png', width: '32', height: '32' }),
+                  React.createElement(
+                    'div',
+                    { 'class': 'media-body' },
+                    React.createElement(
+                      'strong',
+                      null,
+                      'List item title'
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      'Lorem ipsum dolor sit amet.'
+                    )
+                  )
+                )
+              )
             ),
             React.createElement(
-              'p',
-              null,
-              'Thanks for downloading Photon. This is an example HTML page that\'s linked up to compiled Photon CSS, has the proper meta tags and the HTML structure.'
+              'div',
+              { 'class': 'pane' },
+              React.createElement(
+                'div',
+                { 'class': 'padded-more' },
+                React.createElement(
+                  'h1',
+                  null,
+                  'Welcome to Photon'
+                ),
+                React.createElement(
+                  'p',
+                  null,
+                  'Thanks for downloading Photon. This is an example HTML page that\'s linked up to compiled Photon CSS, has the proper meta tags and the HTML structure.'
+                )
+              )
             )
           )
         )

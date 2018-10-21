@@ -39,48 +39,78 @@ let content = <div class="window">
 
   <div class="window-content">
 
-<div class="pane-group">
-<SplitPane split="vertical" minSize={50} defaultSize={100}>
-      <div class="pane-sm sidebar">
+    <div class="pane-group">
+      <SplitPane split="vertical" minSize={150} defaultSize={150}>
+        <div className="sidebar-override">
+          <div class="pane-sm sidebar sidebar-override">
 
-    <nav class="nav-group">
-      <h5 class="nav-group-title">Favorites</h5>
-      <a class="nav-group-item active">
-        <span class="icon icon-home"></span>
-        connors
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Favorites</h5>
+              <a class="nav-group-item active">
+                <span class="icon icon-home"></span>
+                connors
   </a>
-      <span class="nav-group-item">
-        <span class="icon icon-download"></span>
-        Downloads
+              <span class="nav-group-item">
+                <span class="icon icon-download"></span>
+                Downloads
   </span>
-      <span class="nav-group-item">
-        <span class="icon icon-folder"></span>
-        Documents
+              <span class="nav-group-item">
+                <span class="icon icon-folder"></span>
+                Documents
   </span>
-      <span class="nav-group-item">
-        <span class="icon icon-signal"></span>
-        AirPlay
+              <span class="nav-group-item">
+                <span class="icon icon-signal"></span>
+                AirPlay
   </span>
-      <span class="nav-group-item">
-        <span class="icon icon-print"></span>
-        Applications
+              <span class="nav-group-item">
+                <span class="icon icon-print"></span>
+                Applications
   </span>
-      <span class="nav-group-item">
-        <span class="icon icon-cloud"></span>
-        Desktop
+              <span class="nav-group-item">
+                <span class="icon icon-cloud"></span>
+                Desktop
   </span>
-    </nav>
+            </nav>
+          </div>
+        </div>
+        <div>
+          
+            <SplitPane split="horizontal" defaultSize="50%">
+              <div class="pane">
+              <ul class="list-group">
+  <li class="list-group-header">
+    <input class="form-control" type="text" placeholder="Search for someone"/>
+  </li>
+  <li class="list-group-item">
+    <img class="img-circle media-object pull-left" src="/assets/img/avatar.jpg" width="32" height="32"/>
+    <div class="media-body">
+      <strong>List item title</strong>
+      <p>Lorem ipsum dolor sit amet.</p>
     </div>
-      <div class="pane">
-    <div class="padded-more">
-      <h1>Welcome to Photon</h1>
-      <p>
-        Thanks for downloading Photon. This is an example HTML page that's linked up to compiled Photon CSS, has the proper meta tags
-        and the HTML structure.
-    </p>
+  </li>
+  <li class="list-group-item">
+    <img class="img-circle media-object pull-left" src="/assets/img/avatar2.png" width="32" height="32"/>
+    <div class="media-body">
+      <strong>List item title</strong>
+      <p>Lorem ipsum dolor sit amet.</p>
     </div>
-    </div>
-    </SplitPane>
+  </li>
+  
+</ul>
+
+              </div>
+              <div class="pane">
+              <div class="padded-more">
+                <h1>Welcome to Photon</h1>
+                <p>
+                  Thanks for downloading Photon. This is an example HTML page that's linked up to compiled Photon CSS, has the proper meta tags
+                  and the HTML structure.
+                </p>
+              </div>
+              </div>
+            </SplitPane>
+        </div>
+      </SplitPane>
     </div>
   </div>
 

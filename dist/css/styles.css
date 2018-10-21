@@ -47,3 +47,8 @@
 .Resizer.disabled:hover {
   border-color: transparent;
 }
+
+.sidebar-override {
+    max-width: none;
+    height: 100%;
+}
