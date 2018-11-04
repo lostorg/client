@@ -1,0 +1,12 @@
+@startuml
+digraph world {
+size="7,7";
+
+    Paper -> Rock
+    Scissors -> Paper
+    Rock -> Scissors
+
+    
+
+}
+@enduml 
